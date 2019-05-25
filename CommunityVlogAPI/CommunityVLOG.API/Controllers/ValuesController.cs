@@ -18,7 +18,7 @@ namespace CommunityVLOG.API.Controllers
         }
         // GET api/values
         [HttpGet]
-        public IActionResult GetValues()
+        public IActionResult Get()
         {
             var value = _context.Values.ToList();
             return Ok(value);
