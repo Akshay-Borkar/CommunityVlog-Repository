@@ -14,12 +14,11 @@ namespace CommunityVLOG.API.Controllers
         private readonly DataContext _context;
         public ValuesController(DataContext context)
         {
-            _context = context;
-            
+            _context = context;            
         }
         // GET api/values
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult GetValues()
         {
             var value = _context.Values.ToList();
             return Ok(value);
